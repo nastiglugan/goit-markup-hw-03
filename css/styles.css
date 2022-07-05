@@ -15,6 +15,10 @@ body {
   line-height: 1.71;
 }
 
+.container {
+  width: 1200px;
+}
+
 .link {
   text-decoration: none;
   color: currentColor;
@@ -23,6 +27,7 @@ body {
 .list {
   list-style: none;
 }
+
 /*MANE PAGE*/
 
 /* Header */
