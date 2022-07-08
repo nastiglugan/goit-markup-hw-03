@@ -22,7 +22,6 @@
   /* other */
   --indent: 30px;
   --items: 4;
-  --items-three: 3;
 }
 /* Reset*/
 
@@ -35,7 +34,7 @@ ul,
 p {
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
 .link {
@@ -49,6 +48,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* General stayles */
@@ -71,6 +72,13 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
 }
 
 .current {
@@ -100,9 +108,6 @@ body {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
-.card-item-three {
-  flex-basis: calc((100% - var(--indent-) * (var(--items-three) - 1)) / var(--items-three));
-}
 /*MANE PAGE*/
 
 /* Header */
@@ -119,8 +124,10 @@ body {
   align-items: center;
 }
 
-.logo {
+.header .logo {
   margin-right: 93px;
+}
+.logo {
   font-family: var(--secondary-font);
   font-size: 26px;
   line-height: 1.19;
@@ -143,7 +150,7 @@ body {
 
 .contact-list {
   display: flex;
-  margin-left: 331px;
+  margin-left: auto;
   gap: 50px;
 }
 .contact-link {
@@ -191,10 +198,6 @@ body {
 }
 /* Feature section */
 
-.feature-list {
-  display: flex;
-}
-
 .feature-title {
   margin-bottom: 10px;
   font-size: 14px;
@@ -207,11 +210,12 @@ body {
 
 /* Services section */
 
-.section-title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
+.services {
+  padding-top: 0;
+}
+
+.services-list {
+  --items: 3;
 }
 
 /* Team section */
@@ -224,7 +228,6 @@ body {
   background-color: var(--color-white);
   font-size: 16px;
   line-height: 1.18;
-  width: 270px;
   border-radius: 0px 0px 4px 4px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -233,10 +236,7 @@ body {
 }
 
 .team-container {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 30px;
   text-align: center;
 }
 
@@ -259,6 +259,10 @@ body {
   padding-bottom: 60px;
 }
 
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
 .footer-adress {
   font-style: normal;
   margin-top: 20px;
@@ -278,7 +282,7 @@ body {
 
 .filter-list {
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
   gap: 8px;
 }
@@ -309,10 +313,6 @@ body {
 }
 
 /* Portfolio */
-
-.portfolio-item {
-  width: 370px;
-}
 
 .portfolio-container {
   padding-top: 20px;
