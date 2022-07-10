@@ -322,6 +322,11 @@ body {
   border: 1px solid var(--border-color);
   border-top: none;
 }
+
+.portfolio-list {
+  --items: 3;
+}
+
 .portfolio-title {
   margin-bottom: 4px;
   font-size: 18px;
